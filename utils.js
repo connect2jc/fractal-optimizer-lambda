@@ -1,5 +1,4 @@
 const AWS = require('aws-sdk');
-const uuidv1 = require('uuid/v1');
 const short = require('short-uuid');
 
 
@@ -11,10 +10,6 @@ const cognitoidentityserviceprovider = new AWS.CognitoIdentityServiceProvider();
 
 
 
-function genId () {
-    const normal = uuidv1();
-    return shortTranslator.fromUUID(normal);
-}
 
 function result(result, otherBody, status = 200) {
     return {
@@ -94,8 +89,6 @@ module.exports = {
     error,
     getUserData,
     asyncForEach,
-    genId,
-    md5,
     fixPath,
     replaceOnStart,
 };

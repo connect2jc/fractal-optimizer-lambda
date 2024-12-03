@@ -14,6 +14,7 @@
     "@aws-crypto/client-node": "^4.0.2",
     "aws-sdk": "^2.1692.0",
     "base64-js": "^1.5.1",
-    "express": "^4.21.1"
+    "short-uuid": "^5.2.0",
+    "uuid": "^11.0.3"
   }
 }
